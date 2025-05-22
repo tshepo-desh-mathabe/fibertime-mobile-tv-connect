@@ -1,0 +1,64 @@
+/* app.css */
+.tv-page {
+  background: linear-gradient(to right, #00C4E3 0%, #00C4E3 20%, #FFD814 20%, #FFD814 80%, #00C4E3 80%, #00C4E3 100%);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.tv-card {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.tv-code {
+  font-size: 2.5rem;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #FFD814 !important;
+  color: #000000 !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e6c200 !important;
+}
+
+.btn-secondary {
+  background-color: #6c757d !important;
+  color: #FFFFFF !important;
+  border: none;
+}
+
+a.text-decoration-underline {
+  color: #00C4E3 !important;
+  text-decoration: underline !important;
+}
+
+.form-control {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.otp-input {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.otp-input input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #FFD814;
+  border: none;
+  font-size: 1.5rem;
+  color: #000000;
+}

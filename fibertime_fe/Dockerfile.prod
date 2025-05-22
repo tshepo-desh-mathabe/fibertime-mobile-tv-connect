@@ -1,0 +1,35 @@
+# Stage 1: Builder
+FROM node:20-alpine3.20 AS builder
+
+WORKDIR /app
+
+# Install dependencies
+COPY package.json package-lock.json ./
+RUN npm ci
+
+# Create public directory (empty if none exists)
+RUN mkdir -p public
+
+# Copy and build
+COPY . .
+RUN npm run build
+
+# Stage 2: Runner
+FROM node:20-alpine3.20
+
+WORKDIR /app
+
+# Create directory structure
+RUN mkdir -p .next/static public
+
+# Copy standalone server files
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
+
+# Copy public directory (if exists)
+COPY --from=builder /app/public ./public/
+
+# Set port and start server
+ENV PORT 3535
+EXPOSE 3535
+CMD ["node", "server.js"]
