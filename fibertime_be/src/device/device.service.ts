@@ -9,9 +9,9 @@ import { Inject } from '@nestjs/common';
 import { generateAlphanumericCode, calculateExpiryTime } from '../util/calculate.helper';
 import { GenericResponsePayload } from '../util/payload/generic-response';
 import { ConnectionStatus, GenericConst } from '../util/app.const';
-import { ConnectionService } from 'src/connection/connection.service';
-import { BundleService } from 'src/bundle/bundle.service';
-import { ConnectionResponsePayload } from 'src/util/payload/connection-response';
+import { ConnectionService } from '../connection/connection.service';
+import { BundleService } from '../bundle/bundle.service';
+import { ConnectionResponsePayload } from '../util/payload/connection-response';
 import { RedisClientType } from 'redis';
 
 @Injectable()

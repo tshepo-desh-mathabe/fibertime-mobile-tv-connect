@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { UserBundleDto } from 'src/bundle/dto/user-bundle.dto/user-bundle.dto';
+import { UserBundleDto } from '../../bundle/dto/user-bundle.dto/user-bundle.dto';
 
 export class ConnectionResponsePayload {
     @ApiProperty()

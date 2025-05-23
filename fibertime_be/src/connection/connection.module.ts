@@ -6,7 +6,7 @@ import { Device } from '../device/entities/device.entity/device.entity';
 import { RedisModule } from '../common/redis/redis.module';
 import { GuardsModule } from '../common/guards/guards.module';
 import { Connection } from './entities/connection.entity/connection.entity';
-import { DeviceModule } from 'src/device/device.module';
+import { DeviceModule } from '../device/device.module';
 
 @Module({
   imports: [

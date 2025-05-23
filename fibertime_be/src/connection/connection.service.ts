@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Device } from 'src/device/entities/device.entity/device.entity';
+import { Device } from '../device/entities/device.entity/device.entity';
 import { Inject } from '@nestjs/common/decorators';
 import { ConnectionStatus, ConnectionStatusType } from '../util/app.const';
 import { Connection } from './entities/connection.entity/connection.entity';

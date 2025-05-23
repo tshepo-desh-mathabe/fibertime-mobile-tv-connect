@@ -5,8 +5,8 @@ import { DeviceResponseDto } from './dto/device-response.dto';
 import { JwtAuthGuard } from '../common/guards/jwt-auth/jwt-auth.guard';
 import { ApiBearerAuth, ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { GenericResponsePayload } from '../util/payload';
-import { ConnectionResponsePayload } from 'src/util/payload/connection-response';
-import { Public } from 'src/common/decorators/public.decorator';
+import { ConnectionResponsePayload } from '../util/payload/connection-response';
+import { Public } from '../common/decorators/public.decorator';
 
 @ApiTags('Device')
 @Controller('device')

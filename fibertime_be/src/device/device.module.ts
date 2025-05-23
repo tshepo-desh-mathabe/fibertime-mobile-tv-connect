@@ -5,10 +5,10 @@ import { DeviceController } from './device.controller';
 import { Device } from './entities/device.entity/device.entity';
 import { User } from '../user/entities/user.entity/user.entity';
 import { GuardsModule } from '../common/guards/guards.module';
-import { ConnectionModule } from 'src/connection/connection.module';
+import { ConnectionModule } from '../connection/connection.module';
 import { ConfigModule } from '@nestjs/config';
-import { RedisModule } from 'src/common/redis/redis.module';
-import { BundleModule } from 'src/bundle/bundle.module';
+import { RedisModule } from '../common/redis/redis.module';
+import { BundleModule } from '../bundle/bundle.module';
 
 @Module({
   imports: [

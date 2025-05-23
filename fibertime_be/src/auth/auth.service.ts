@@ -9,7 +9,7 @@ import { RequestOtpDto, VerifyOtpDto } from './dto/index';
 import { ConfigService } from '@nestjs/config';
 import { Inject } from '@nestjs/common/decorators';
 import { LoginResponsePayload, GenericResponsePayload } from '../util/payload/index';
-import { calculateExpiryTime } from 'src/util/calculate.helper';
+import { calculateExpiryTime } from '../util/calculate.helper';
 
 @Injectable()
 export class AuthService {

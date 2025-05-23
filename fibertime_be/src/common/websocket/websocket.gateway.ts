@@ -1,6 +1,6 @@
 import { WebSocketGateway, SubscribeMessage, WebSocketServer, MessageBody } from '@nestjs/websockets';
 import { Logger } from '@nestjs/common';
-import { DeviceService } from 'src/device/device.service';
+import { DeviceService } from '../../device/device.service';
 import { Server } from 'socket.io';
 import { Public } from '../decorators/public.decorator';
 
